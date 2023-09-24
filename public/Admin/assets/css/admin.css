@@ -1,0 +1,87 @@
+.formulario {
+background-color: white;
+padding: 20px;
+}
+
+.tabela {
+background-color: white;
+box-shadow: 1px 1px 2px #ddd;
+padding: 15px;
+}
+/*============================================
+
+Modal para alteração das informação do produto
+
+============================================*/
+
+.tela {
+	position: fixed;
+	padding: 0;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: rgba(0, 0, 0, 0.5);
+	transform: scale(1.1);
+	z-index: 999;
+	opacity: 0;
+	visibility: hidden;
+	transition: visibility 0.25s ease-in-out, transform 0.25s ease-in-out, 
+	opacity 0.25s ease-in-out;
+}
+.tela-content {
+	background-color: white;
+	padding: 16px 24px;
+	width: 590px;
+	border-radius: 0.5rem;
+}
+.tela-content h1 {
+	margin-top: 15px;
+}
+.tela-content p {
+	text-indent: 20px;
+	text-align: justify;
+}
+.tela-content span {
+	float: right;
+	width: 24px;
+	cursor: pointer;
+	font-size: 18px;
+	background-color: lightgray;
+	text-align: center;
+	line-height: 24px;
+	border-radius: 2px;
+}
+.tela-content span:hover {
+	background-color: darkgray;
+}
+.show-modal {
+	opacity: 1;
+	visibility: visible;
+	transform: scale(1.0);
+}
+
+/*==============================*/
+.movimentos {
+display:grid;
+grid-template-columns: repeat(3,1fr);
+grid-gap: 10px;
+}
+.movimentos div {
+    background-color: rgb(23, 90, 233);
+    padding: 5px;
+    border:1px solid rgb(23, 90, 233);
+    border-radius: 2px;
+    color:white;
+}
+
+.movimentos div p {
+margin-left: -40px;
+margin-top: 10px;
+}
+.movimentos div p span {
+    color:black;
+}
